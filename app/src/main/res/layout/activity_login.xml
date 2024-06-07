@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".Login">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="264dp"
+        android:layout_height="124dp"
+        app:srcCompat="@drawable/logom" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¿Olvidaste tu contraseña?"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="2dp"/>
+
+    <EditText
+        android:id="@+id/emailET"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:hint="Correo electronico"
+        android:maxLines="1"
+        android:inputType="textEmailAddress"
+        android:textSize="16sp"
+        android:padding="19dp"
+        android:paddingEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/background_edit_text" />
+
+    <RelativeLayout
+        style="@style/styleRelative">
+
+        <EditText
+            android:id="@+id/passwordET"
+            android:hint="password"
+            android:layout_toStartOf="@+id/passwordIcon"
+            style="@style/StyleEditText"/>
+
+        <ImageView
+            android:id="@+id/passwordIcon"
+            style="@style/StyleImage"
+            android:onClick="togglePasswordVisibility"
+            />
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Has olvidado tu contraseña"
+        android:layout_gravity = "end"
+        android:textColor="@color/blue"
+        android:textSize="12sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnIniciar"
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="40dp"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/btn_primary"
+        android:text="Iniciar sesion"
+        android:onClick="validarDatos"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/textViewQuestion"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="¿No tienes cuenta? "
+
+            android:textSize="16sp"/>
+
+        <TextView
+            android:id="@+id/textViewSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create new account"
+            android:textStyle="bold"
+            android:textColor="@color/blue"
+            android:autoLink="web"
+            android:onClick="RegisterInClicked"/>
+
+    </LinearLayout>
+
+</LinearLayout>

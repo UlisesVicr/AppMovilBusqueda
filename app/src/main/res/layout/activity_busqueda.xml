@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Busqueda">
+
+    <!-- Header Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/white">
+
+        <!-- Profile Icon -->
+        <ImageView
+            android:id="@+id/baseline_profile"
+            style="@style/StyleImageP" />
+
+        <!-- Main Search Area -->
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:orientation="vertical">
+            <RelativeLayout
+                style="@style/styleRelative">
+
+                <!-- Search Icon -->
+                <ImageView
+                    android:id="@+id/search_icon"
+                    style="@style/StyleImageB" />
+
+                <EditText
+                    android:id="@+id/passwordET"
+                    android:hint="Buscar"
+                    style="@style/StyleEditText"
+                    android:layout_toEndOf="@id/search_icon"
+                    android:paddingStart="40dp" />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <!-- Settings Icon -->
+        <ImageView
+            android:id="@+id/settings_icon"
+            style="@style/StyleImageC" />
+    </LinearLayout>
+
+    <!-- Main Content Layout -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Example Post: Trends for you -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Trends for you"
+            android:textSize="18sp"
+            android:textColor="@color/black"
+            android:padding="8dp"
+           />
+
+        <!-- Example Post: PODCAST BLABLA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PODCAST DEL MOMENTO"
+            style="@style/StylePodcastTitle"
+            android:padding="8dp"
+             />
+
+        <!-- Example Post: Entretenimiento-Trending -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento - Trending"
+            style="@style/StyleDescription"
+            android:padding="8dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="NOTICIAS DE ULTIMO MOMENTO"
+            style="@style/StylePodcastTitle"
+            android:padding="8dp"
+            />
+
+        <!-- Example Post: Entretenimiento-Trending -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Espectaculos - Trending"
+            style="@style/StyleDescription"
+            android:padding="8dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LO QUE HA PASADO EN PACHUCA"
+            style="@style/StylePodcastTitle"
+            android:padding="8dp"
+            />
+
+        <!-- Example Post: Entretenimiento-Trending -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento - Trending"
+            style="@style/StyleDescription"
+            android:padding="8dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="PROGRAMA MAS VISTO"
+            style="@style/StylePodcastTitle"
+            android:padding="8dp"
+            />
+
+        <!-- Example Post: Entretenimiento-Trending -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento - Trending"
+            style="@style/StyleDescription"
+            android:padding="8dp"
+            />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@drawable/divider_line" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="LOS MEJORES VIDEOS"
+            style="@style/StylePodcastTitle"
+            android:padding="8dp"
+            />
+
+        <!-- Example Post: Entretenimiento-Trending -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Entretenimiento - Trending"
+            style="@style/StyleDescription"
+            android:padding="8dp"
+            />
+    </LinearLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mostrar mas"
+        android:textStyle="bold"
+        android:layout_gravity = "end"
+        android:textColor="@color/blue"
+        android:textSize="16sp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
